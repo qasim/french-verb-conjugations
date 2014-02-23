@@ -8,6 +8,7 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var sqlite = require('sqlite3');
+var tools = require('./tools');
 
 var app = express();
 
@@ -38,18 +39,60 @@ server.listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
 });
 
-var io = require("socket.io").listen(server);
+
+//Get the database
+var db = new sqlite.Database("verbs.db");
+
+
+//Start listening for clients
+var io = require('socket.io').listen(server);
 
 //When a client connects
 io.sockets.on('connection', function(socket) {
 
 	//When a client makes a search request
 	socket.on('search', function(data) {
-		console.log('got search');
-		io.sockets.emit('results', {
-			data: 'null'
-		});
-		console.log('sent results');
+
+		//Only do this if query is longer than 2 characters:
+		if(data.query.length > 2) {
+			query = decodeURIComponent(data.query);
+			query = tools.removeDiacritics(query);
+			query = query.replace(/''/g, '%27');
+			query = query.replace(/%/g, '%27');
+
+			//Huge ass query. My "algorithm" for finding wanted verb.
+			db.each("SELECT * FROM (\
+					SELECT _id, name, desc, data, '1' as ord FROM verbs WHERE name_unaccented LIKE '" + query + "' ESCAPE '\\'\
+					UNION\
+					SELECT _id, name, desc, data, '2' as ord FROM verbs WHERE name_unaccented LIKE '%" + query + "%' ESCAPE '\\'\
+					UNION\
+					SELECT _id, name, desc, data, '3' as ord FROM verbs WHERE data_unaccented LIKE '%\"" + query + "\"]%' ESCAPE '\\'\
+			) ORDER BY ord ASC LIMIT 8", function(err, row) {
+				//The beautiful ID.
+				var _id = row._id;
+
+				//Get verb, put it in the right format
+				var verb = decodeURIComponent(row.name);
+
+				//Get the nature from JSON obj
+				var desc = JSON.parse(row.desc);
+				var nature = desc.nature;
+				nature = decodeURIComponent(nature);
+
+				//Send to client
+				io.sockets.emit('result', {
+					'_id': _id,
+					'verb': verb,
+					'nature': nature
+				});
+			}, function(err, rows) {
+				if(rows == 0) {
+					io.sockets.emit('no-results', {});
+				}
+			});
+		} else {
+			io.sockets.emit('no-results', {});
+		}
 	});
 
 });
