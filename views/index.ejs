@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title><%= title %></title>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="javascripts/jquery.js"></script>
+		<script src="javascripts/main.js"></script>
+
+		<link href="stylesheets/main.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="side-search">
+			<form action="" method="get" onSubmit="return false;">
+				<input class="search" type="text" placeholder="Begin typing..." name="q" autocomplete="off" autofocus/>
+			</form>
+			<div class="insertion-point">
+
+			</div>
+			<div class="loader">
+				<img src="images/ajax-loader.gif" />
+			</div>
+		</div>
+	</body>
+</html>

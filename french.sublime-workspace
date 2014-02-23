@@ -1,0 +1,371 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fav_te",
+				"fav_team_played"
+			],
+			[
+				"TaskG",
+				"TaskGrid2"
+			],
+			[
+				"damaged",
+				"damagedItemInfo"
+			],
+			[
+				"_fi",
+				"_fid_14"
+			],
+			[
+				"_fid",
+				"_fid_13"
+			],
+			[
+				"_fid_",
+				"_fid_8"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/BE0176E6-08EC-473C-B6A0-901989052983/load_db.php",
+		"/Users/qasim/Documents/Development/CEMC CCC/2013_s1.py",
+		"/Users/qasim/Downloads/nix_or_mac/senior/S3/s3.1.in",
+		"/Users/qasim/Downloads/nix_or_mac/senior/S3/s3.3.in",
+		"/Users/qasim/Downloads/nix_or_mac/senior/S3/s3.2.in",
+		"/Users/qasim/Documents/Development/Project Euler/30.py",
+		"/Users/qasim/Documents/Development/Project Euler/31.py",
+		"/Users/qasim/Documents/Development/NodeApps/game/routes/index.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/17C872C2-1B73-464E-81A7-FD7F9397A8DA/article.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/D0C5EEBC-336A-468E-9155-E0222B716AB7/posts.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/C5FD52E4-C53B-4F43-A925-A935A57AE64A/index.html",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/6C083D8A-1809-4384-84F6-CCBB917AA1EF/blog.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/EDAFC1A3-93C7-4555-8FE5-6582426AF5F8/main.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/6BF5282B-1C6B-4146-B988-1D881FF8E996/index.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/07AA4E99-A88A-4FF2-BA7B-9613C592D058/main.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/7E8E37A1-2B7E-47D2-A8EB-F4E132C4B93A/post.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/9459425E-523D-4107-8205-B1642A8020B9/index.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/FF7F809B-2DCC-48C9-8CC0-4CB1AC24363D/composer.json",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/B0C029FF-3510-4DEC-A1F0-17C51C32ACA3/posts.php",
+		"/Users/qasim/Downloads/font-awesome-4.0.3/css/font-awesome.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/405B887A-1823-4DD5-95F3-1D98060CC073/ie.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/F1C3F1E8-5602-4F9B-8503-D92ACEBCFA46/main.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/235758BD-A999-4FE2-AB7C-E0A9FF42A3E0/index.html",
+		"/Users/qasim/Downloads/PIE-2.0beta1/PIE.php",
+		"/Users/qasim/Documents/Development/My Website/www/assets/js/main.js",
+		"/Users/qasim/Documents/Development/NodeApps/qasim/routes/user.js",
+		"/Users/qasim/Documents/Development/My Website/www/assets/css/main.css",
+		"/Users/qasim/Documents/Development/My Website/www/index.html",
+		"/Users/qasim/Documents/Development/My Website/www/assets/js/jquery.js",
+		"/Users/qasim/Downloads/jquery.backgroundpos.package-1.1.1 (1)/jquery.backgroundpos.min.js",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/app.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/F4353259-BF55-4868-83B1-BBE1CE4AAA0A/payment.php",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/package.json",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/72F5BEBE-D7EB-4053-88C4-644CBC7E8B15/index.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/4AF2D18F-39A2-46A9-B94B-314056B4D7A5/search.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/5FE983C7-794F-41FD-BCCC-E7082805F778/functions.php",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/routes/index.js",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/views/index.ejs",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/public/javascripts/main.js",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/public/javascripts/player.js",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/public/stylesheets/main.css",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/app.js",
+		"/Users/qasim/Documents/Development/NodeApps/youtube-app/public/stylesheets/style.styl",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/package.json",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/public/javascripts/main.js",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/views/test.ejs",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/routes/test.js",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/public/javascripts/jquery.js",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/views/index.ejs",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/routes/index.js",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/routes/user.js",
+		"/Users/qasim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/qasim/Documents/Development/NodeApps/fun-app/routes/test/index.js",
+		"/Users/qasim/Documents/Development/NodeApps/hello-world/package.json",
+		"/Users/qasim/Documents/Development/NodeApps/hello-world/app.js",
+		"/Users/qasim/Documents/Development/Math Studies IA/work.js",
+		"/Users/qasim/Documents/Development/Math Studies IA/organize_data.py",
+		"/Users/qasim/Documents/Development/Math Studies IA/2012-weather-organized.csv",
+		"/Users/qasim/Documents/test.py",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/1016A833-6DCD-469F-BEFB-2474274ED189/main.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/5554ED5C-71C4-4A87-872C-8C1EBEEA9961/form.php",
+		"/Users/qasim/Documents/Development/Math Studies IA/2012-weather-data.csv",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/8F0D1558-1CCA-4C08-B39E-59DF011B81D9/index.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/B4E0CB1A-6A4A-4351-AF44-67F552586B7F/main.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/DEF0ECDB-E5D1-4676-9801-F7AD807D908D/set_username.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/13A5F9A4-5B97-4A12-AC3B-01A13C139505/sql.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/6E282883-31AD-4588-9AAE-EAA25F23FDE6/main.css",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/9147C31B-B874-4833-BA6D-684191CAC94E/player.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/51F4AF81-4210-4E4D-9DDB-CA980D8BBE30/index.html",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/36171B72-73C9-4D39-8520-EEAFF8EB6AB8/index.html",
+		"/Users/qasim/Documents/Work/MCF Tech/DemoApp/orgchart/untitled.html",
+		"/Users/qasim/Downloads/occam-krt16o/flash-all.sh",
+		"/Users/qasim/Downloads/occam-krt16o 2/flash-base.sh",
+		"/Users/qasim/Documents/Work/MCF Tech/Confam/AddWO_UI.html",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/135FF370-75EA-4063-8393-540DD79393D2/payment.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/B0326507-8FBD-47C4-B40D-0C45C1418348/get_weather.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/9A565279-5FFF-4982-897E-D2619B9D72D9/guide.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/D93DD62D-7E09-4B58-9D24-3EC9FAC9E5AC/index.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/9F6752D1-A5EB-43F8-9949-86574EFD7FD6/payment.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/60B9EE58-ACA8-4A64-9335-1EE8DC0A1232/save_payment.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/7A69615A-5DC3-45A3-AEAC-186013FC2983/default.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/F2C56F4F-04CD-46A1-B7F4-61359D086907/mcf.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/B195BC74-6C08-48ED-B9D5-3DA527C795AC/set_access.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/28B40B2E-CBD0-4352-A9A7-B22D6D89D26D/log_item.php",
+		"/Users/qasim/Downloads/jquery-1.10.2.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/5325267C-CCA1-428B-96DD-5DE379F8023C/payment.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/7F696C06-78D2-4312-A37F-29E2FE03F468/guide.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/BFD6AEC2-EDF1-4660-BE05-A75067A033A3/guide.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/1D92A1B6-2047-42EA-B9FE-CB538D2BD70C/payment.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/126EAC77-95C0-483D-9591-7436391210B6/log_item.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/9EEC5552-3468-4CBE-BF17-4A1E7398C6A1/guide.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/D8EFCA10-46C1-4BC9-B87D-C50440B18251/speedtest.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/8AABEED4-301D-42E4-B612-CAB46E1085BF/scheduler.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/31966258-49CE-4B7B-AB01-5073517D2346/scheduler.js",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/AF595325-FCE0-4F79-B4A4-D0E556C790BC/submit_form.php",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/ECE03182-1DDF-4639-9A24-96C086FCD18F/form.php",
+		"/Users/qasim/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/qasim/Library/Caches/Cleanup At Startup/Transmit/B6779957-D4C4-4344-B542-C55D6D080889/index.php",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/3mm/app_access/set_access.php",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/home/www/public_html/qiqbal/3mm/claim_form/form.php",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/home/www/public_html/qiqbal/3mm/claim_form/submit_form.php",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/home/www/public_html/qiqbal/3mm/claim_form/main.js",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/home/www/public_html/qiqbal/3mm/main.js",
+		"/private/var/folders/j4/slrwskhs64z_9vf44wmvg5wr0000gn/T/abb70e87-5ae1-49de-be78-5664adec15b2/home/www/public_html/qiqbal/3mm/form.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"afafaf",
+			"}\n",
+			");\n",
+			"}*/",
+			"g",
+			");\n",
+			"background: rgba",
+			"Experience",
+			"src",
+			"play.png",
+			"play",
+			"pauseVideo",
+			"console.log",
+			"onProgress",
+			"str_pad",
+			"toTime",
+			"src",
+			"21",
+			"..",
+			"2",
+			"016",
+			"..",
+			"9",
+			"03",
+			"..",
+			"40",
+			"latest",
+			"require",
+			"test",
+			"var",
+			"{\n",
+			"',",
+			"});\n",
+			"\\n",
+			"\\r",
+			",,",
+			"<31",
+			"Would you like for a ",
+			";\n",
+			"main",
+			";\n",
+			".volume-bar",
+			"				\n",
+			");\n",
+			"damaged_table",
+			"submit",
+			"speedof",
+			"speed",
+			"speedof",
+			"speed",
+			"speedof",
+			"action=",
+			"start-time",
+			"success",
+			"pdf_form",
+			"submit",
+			"action=",
+			"$qdb",
+			"<form",
+			"form",
+			"rid-log",
+			"action=",
+			"frmPreProcess",
+			"add_record",
+			"	\n",
+			"jquery",
+			"add_record",
+			"csv",
+			"add_record",
+			"dragDrop",
+			"dragDrop[",
+			"unTaskStore",
+			";\n",
+			"%',\n",
+			"Task Library",
+			"_2",
+			"unTaskStore",
+			"getUnTasks",
+			"taskLibrary",
+			"taskLibraryTable",
+			"library",
+			"eventStore",
+			"taskeventStore",
+			"task",
+			"return ",
+			"Staffs",
+			"Staff",
+			"s",
+			"StaffScheduler",
+			"layout",
+			"StaffScheduler",
+			"unTaskStore",
+			"Task Library",
+			" \n\n\n\nTask Library",
+			"\n\n\n\nTask Library",
+			"Task Library\n\n\n\nTask Library",
+			"Task Library",
+			"add_record"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			" - \\n",
+			" - \\r",
+			",0,",
+			"18"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 192.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true
+}
