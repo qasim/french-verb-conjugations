@@ -5,43 +5,28 @@ $(document).ready(function() {
 
 	//Real-time: send search requests as the user types
 	$('.search').keyup(function(e) {
-		var searchQuery = encodeURIComponent($('.search').val());
-		window.socket.emit('search', {
-			query: searchQuery
-		});
-		console.log('sent search');
+		if(e.keyCode == 13) {
+			$('.insertion-point').html('');
+			$('.loader').show();
+			var searchQuery = encodeURIComponent($('.search').val());
+			window.socket.emit('search', {
+				query: searchQuery
+			});
+			console.log('sent search');
+		}
 	});
 
-	window.socket.on('results', function(data) {
-		console.log('got results');
+	window.socket.on('result', function(data) {
+		console.log(data);
+		$('.loader').hide();
+		$('.insertion-point').append('<div class="result" id="_' + data._id + '"><b>' + data.verb + '</b><br />' + data.nature + '</div>');
+		$('#_' + data._id).fadeIn('fast');
+	});
+
+	window.socket.on('no-results', function() {
+		$('.loader').hide();
+		$('.insertion-point').append('<div class="result" id="_0">Nothing was returned.</div>');
+		$('#_0').fadeIn('fast');
 	});
 
 });
-
-
-function newSearch() {
-	if($('.search').val().length > 2) {
-		$('title').html(encodeURIComponent($('.search').val()));
-
-		$('.insertion-point').slideUp('fast');
-		$('.loader').show();
-
-		$('.insertion-point').load('get_search.php', 'q=' + encodeURIComponent($('.search').val().toLowerCase()), function() {
-			if($(this).html().length > 5) {
-				$('.loader').hide();
-				$('.insertion-point').slideDown('fast');
-				if($('.result').length > 3) {
-					opacityLevel = 1;
-					for(var i = 3; i <= $('.result').length; i++) {
-						opacityLevel = 1 - (i / $('.result').length);
-						$('.result').eq(i).css('opacity', opacityLevel);
-					}
-				}
-			} else {
-				$('.insertion-point').html('<div class="result" style="text-align: center;">That returned nothing.</div>');
-				$('.loader').hide();
-				$('.insertion-point').slideDown('fast');
-			}
-		});
-	}
-}

@@ -15,7 +15,6 @@ body {
 	width: 230px;
 	font-size: 18px;
 	outline: 0;
-	margin-bottom: -18px;
 	border: 2px solid #90A8A8;
 	display: block;
 }
@@ -30,7 +29,13 @@ body {
 	color: #ABABAB;
 	position: relative;
 	cursor: pointer;
+	display: none;
 }
+
+	.result#_0 {
+		text-align: center;
+		padding-top: 10px;
+	}
 
 .result:hover {
 	background: #DCE3E3;
