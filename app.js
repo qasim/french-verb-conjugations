@@ -9,6 +9,8 @@ var http = require('http');
 var path = require('path');
 var sqlite = require('sqlite3');
 var tools = require('./tools');
+var request = require('request');
+var fs = require('fs');
 
 var app = express();
 
@@ -39,10 +41,8 @@ server.listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
 });
 
-
 //Get the database
 var db = new sqlite.Database("verbs.db");
-
 
 //Start listening for clients
 var io = require('socket.io').listen(server);
@@ -51,7 +51,7 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function(socket) {
 
 	//When a client makes a search request
-	socket.on('search', function(data) {
+	socket.on('search', functioxn(data) {
 
 		//Only do this if query is longer than 2 characters:
 		if(data.query.length > 2) {

@@ -91,5 +91,9 @@ module.exports = {
 	        str = str.replace(changes[i].letters, changes[i].base);
 	    }
 	    return str;
+	},
+	getBetween: function (zStr, zStart, zEnd, zPos) {
+    	var z1 = zStr.indexOf(zStart, (zPos === undefined ? 0 : zPos)); var z2 = zStr.indexOf(zEnd, z1);
+    	return z2 > z1 && z1 > -1 ? zStr.substring(z1 + zStart.length, z2) : '';
 	}
 }
