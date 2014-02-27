@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-	app.use(express.errorHandler());
+  app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
@@ -38,7 +38,7 @@ app.get('/', routes.index);
 var server = http.createServer(app);
 
 server.listen(app.get('port'), function() {
-	console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on port ' + app.get('port'));
 });
 
 //Get the database
@@ -51,22 +51,25 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function(socket) {
 
 	//When a client makes a search request
-	socket.on('search', functioxn(data) {
+	socket.on('search', function(data) {
 
 		//Only do this if query is longer than 2 characters:
 		if(data.query.length > 2) {
-			query = decodeURIComponent(data.query);
-			query = tools.removeDiacritics(query);
+		  query = decodeURIComponent(data.query);
+      query = tools.removeDiacritics(query);
 			query = query.replace(/''/g, '%27');
 			query = query.replace(/%/g, '%27');
 
 			//Huge ass query. My "algorithm" for finding wanted verb.
 			db.each("SELECT * FROM (\
-					SELECT _id, name, desc, data, '1' as ord FROM verbs WHERE name_unaccented LIKE '" + query + "' ESCAPE '\\'\
-					UNION\
-					SELECT _id, name, desc, data, '2' as ord FROM verbs WHERE name_unaccented LIKE '%" + query + "%' ESCAPE '\\'\
-					UNION\
-					SELECT _id, name, desc, data, '3' as ord FROM verbs WHERE data_unaccented LIKE '%\"" + query + "\"]%' ESCAPE '\\'\
+        SELECT _id, name, desc, data, '1' as ord FROM verbs\
+        WHERE name_unaccented LIKE '" + query + "' ESCAPE '\\'\
+			  UNION\
+        SELECT _id, name, desc, data, '2' as ord FROM verbs\
+        WHERE name_unaccented LIKE '%" + query + "%' ESCAPE '\\'\
+        UNION\
+        SELECT _id, name, desc, data, '3' as ord FROM verbs\
+        WHERE data_unaccented LIKE '%\"" + query + "\"]%' ESCAPE '\\'\
 			) ORDER BY ord ASC LIMIT 8", function(err, row) {
 				//The beautiful ID.
 				var _id = row._id;
@@ -96,4 +99,3 @@ io.sockets.on('connection', function(socket) {
 	});
 
 });
-
