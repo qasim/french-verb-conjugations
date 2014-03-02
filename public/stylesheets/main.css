@@ -47,6 +47,13 @@ body {
 	color: #000;
 }
 
+	.result .meaning {
+		overflow: hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+		width: 230px;
+	}
+
 .type {
 	position: absolute;
 	top: 0px;
