@@ -62,14 +62,20 @@ io.sockets.on('connection', function(socket) {
 
 			//Huge ass query. My "algorithm" for finding wanted verb.
 			db.each("SELECT * FROM (\
-        SELECT _id, name, desc, data, '1' as ord FROM verbs\
+        SELECT _id, name, meaning, desc, data, '1' as ord FROM verbs\
         WHERE name_unaccented LIKE '" + query + "' ESCAPE '\\'\
 			  UNION\
-        SELECT _id, name, desc, data, '2' as ord FROM verbs\
+        SELECT _id, name, meaning, desc, data, '2' as ord FROM verbs\
         WHERE name_unaccented LIKE '%" + query + "%' ESCAPE '\\'\
         UNION\
-        SELECT _id, name, desc, data, '3' as ord FROM verbs\
+        SELECT _id, name, meaning, desc, data, '3' as ord FROM verbs\
         WHERE data_unaccented LIKE '%\"" + query + "\"]%' ESCAPE '\\'\
+        UNION\
+        SELECT _id, name, meaning, desc, data, '4' as ord FROM verbs\
+        WHERE meaning LIKE '%\"" + query + "\"%' ESCAPE '\\'\
+        UNION\
+        SELECT _id, name, meaning, desc, data, '5' as ord FROM verbs\
+        WHERE meaning LIKE '%" + query + "%' ESCAPE '\\'\
 			) ORDER BY ord ASC LIMIT 8", function(err, row) {
 				//The beautiful ID.
 				var _id = row._id;
@@ -81,11 +87,13 @@ io.sockets.on('connection', function(socket) {
 				var desc = JSON.parse(row.desc);
 				var nature = desc.nature;
 				nature = decodeURIComponent(nature);
+        var meaning = JSON.parse(row.meaning);
 
 				//Send to client
 				io.sockets.emit('result', {
 					'_id': _id,
 					'verb': verb,
+          'meaning': meaning,
 					'nature': nature
 				});
 			}, function(err, rows) {

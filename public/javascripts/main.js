@@ -19,7 +19,7 @@ $(document).ready(function() {
 	window.socket.on('result', function(data) {
 		console.log(data);
 		$('.loader').hide();
-		$('.insertion-point').append('<div class="result" id="_' + data._id + '"><b>' + data.verb + '</b><br />' + data.nature + '</div>');
+		$('.insertion-point').append('<div class="result" id="_' + data._id + '"><b>' + data.verb + '</b><div class="meaning">' + data.meaning.join(', ') + '</div></div>');
 		$('#_' + data._id).fadeIn('fast');
 	});
 
